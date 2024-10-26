@@ -21,10 +21,10 @@ app.use(cors({
 }))
 mongoose.connect("mongodb://localhost:27017/myDatabase").then(()=>{
     console.log("connected to database")
-})
-// mongoose.connect(process.env.MONGO_URI).then(()=>{
+// // })
+// mongoose.connect("mongodb+srv://admin:admin@cluster0.rzjxm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
 //     console.log("connected to database")
-// })
+})
 
 
 
@@ -169,7 +169,4 @@ app.listen(port,()=>{
     console.log("server is running on port",port)
 })
 
-module.exports = {
-    verifyUser
-}
 
